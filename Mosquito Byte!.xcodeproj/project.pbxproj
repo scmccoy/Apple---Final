@@ -15,6 +15,9 @@
 		B190A3D31BE3E0F200F006A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B190A3D11BE3E0F200F006A4 /* LaunchScreen.storyboard */; };
 		B190A3DE1BE3E0F300F006A4 /* Mosquito_Byte_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B190A3DD1BE3E0F300F006A4 /* Mosquito_Byte_Tests.swift */; };
 		B190A3E91BE3E0F300F006A4 /* Mosquito_Byte_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B190A3E81BE3E0F300F006A4 /* Mosquito_Byte_UITests.swift */; };
+		B1DDA99B1BE3EAFF00525E6A /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DDA99A1BE3EAFF00525E6A /* About.swift */; };
+		B1DDA99D1BE3EB2E00525E6A /* FunFactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DDA99C1BE3EB2E00525E6A /* FunFactViewController.swift */; };
+		B1DDA99F1BE3ED0600525E6A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1DDA99E1BE3ED0600525E6A /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		B190A3E41BE3E0F300F006A4 /* Mosquito Byte!UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mosquito Byte!UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B190A3E81BE3E0F300F006A4 /* Mosquito_Byte_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mosquito_Byte_UITests.swift; sourceTree = "<group>"; };
 		B190A3EA1BE3E0F300F006A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1DDA99A1BE3EAFF00525E6A /* About.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
+		B1DDA99C1BE3EB2E00525E6A /* FunFactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunFactViewController.swift; sourceTree = "<group>"; };
+		B1DDA99E1BE3ED0600525E6A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1DDA99F1BE3ED0600525E6A /* CoreLocation.framework in Frameworks */,
 				40E1529EC5837A5EBAECBEB5 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,6 +89,7 @@
 		2498BAA4F59E01D104AFBDF8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B1DDA99E1BE3ED0600525E6A /* CoreLocation.framework */,
 				3F632BBADA661728D1E1E961 /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -127,6 +135,8 @@
 				B190A3CF1BE3E0F200F006A4 /* Assets.xcassets */,
 				B190A3D11BE3E0F200F006A4 /* LaunchScreen.storyboard */,
 				B190A3D41BE3E0F200F006A4 /* Info.plist */,
+				B1DDA99A1BE3EAFF00525E6A /* About.swift */,
+				B1DDA99C1BE3EB2E00525E6A /* FunFactViewController.swift */,
 			);
 			path = "Mosquito Byte!";
 			sourceTree = "<group>";
@@ -332,7 +342,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1DDA99D1BE3EB2E00525E6A /* FunFactViewController.swift in Sources */,
 				B190A3CB1BE3E0F200F006A4 /* ViewController.swift in Sources */,
+				B1DDA99B1BE3EAFF00525E6A /* About.swift in Sources */,
 				B190A3C91BE3E0F200F006A4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

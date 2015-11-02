@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,8 +18,45 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mosquito Byte!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQM-sL-2yj">
+                                <rect key="frame" x="20" y="135" width="560" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="kaf-ub-I5h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright (c) 2015 Waystone Design. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uHe-eT-yGy">
+                                <rect key="frame" x="20" y="516" width="560" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="a4V-Wa-rie"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="load_screen_image" translatesAutoresizingMaskIntoConstraints="NO" id="MT3-Zf-4zV">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MT3-Zf-4zV" secondAttribute="height" multiplier="1:1" id="T9D-kO-GHs"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WQM-sL-2yj" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="1hz-HI-YJx"/>
+                            <constraint firstItem="WQM-sL-2yj" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="115" id="4Ld-aT-mQ5"/>
+                            <constraint firstItem="MT3-Zf-4zV" firstAttribute="top" secondItem="WQM-sL-2yj" secondAttribute="bottom" constant="8" symbolic="YES" id="CNB-6U-IIs"/>
+                            <constraint firstItem="uHe-eT-yGy" firstAttribute="trailing" secondItem="WQM-sL-2yj" secondAttribute="trailing" id="RYB-iV-ZcX"/>
+                            <constraint firstItem="MT3-Zf-4zV" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="VQ7-nr-S3z"/>
+                            <constraint firstItem="MT3-Zf-4zV" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="qqY-dp-gFZ"/>
+                            <constraint firstAttribute="bottom" secondItem="uHe-eT-yGy" secondAttribute="bottom" constant="20" symbolic="YES" id="vgC-PF-AC5"/>
+                            <constraint firstItem="MT3-Zf-4zV" firstAttribute="centerX" secondItem="WQM-sL-2yj" secondAttribute="centerX" id="xoG-xb-xyc"/>
+                            <constraint firstItem="uHe-eT-yGy" firstAttribute="leading" secondItem="WQM-sL-2yj" secondAttribute="leading" id="zzY-8L-rUa"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -25,4 +64,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="load_screen_image" width="512" height="512"/>
+    </resources>
 </document>
