@@ -1,4 +1,4 @@
-# Mosquito Byte! App
+# Mosquito Byte! App (Apple / Swift)
 
 A citizen science app built for [Vector Ecology](http://vectorecology.org/outreach/mosquito-bite-app/).
 
